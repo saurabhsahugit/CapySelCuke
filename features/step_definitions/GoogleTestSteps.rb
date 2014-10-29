@@ -23,5 +23,9 @@ profile = Selenium::WebDriver::Firefox::Profile.new
     #driver.get("http://www.google.com");
 
    @driver.get("http://www.test.com")
+   @driver.find_element(:id, "footer-bottom")
+
+puts "QUITTING"   
+   @driver.quit
 
 end
