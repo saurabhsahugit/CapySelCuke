@@ -1,6 +1,7 @@
 require 'selenium-webdriver'
 #require 'rspec/expectations'
 require 'capybara/cucumber'
+require 'capybara-webkit'
 require 'headless'
 
 h = Headless.new
