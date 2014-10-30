@@ -19,6 +19,8 @@ class BingSearch
   end
   
   def BingSearchFor(search_text)
+   wait = Selenium::WebDriver::Wait.new(:timeout => 10)
+   wait.until { @driver.find_element(BING_SEARCH_FIELD) } 
    @driver.find_element(BING_SEARCH_FIELD).send_keys search_text
    @driver.find_element(BING_SEARCH_FIELD).send_keys :return
   end
