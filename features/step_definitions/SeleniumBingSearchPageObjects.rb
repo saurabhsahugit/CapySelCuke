@@ -3,6 +3,9 @@ require 'selenium-webdriver'
 require 'capybara/cucumber'
 require 'headless'
 
+h = Headless.new
+h.start
+
  #attr_reader :driver
 
 BING_SEARCH_FIELD = {id: 'sb_form_q'}
