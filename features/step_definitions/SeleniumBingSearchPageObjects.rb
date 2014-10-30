@@ -1,5 +1,5 @@
 require 'selenium-webdriver'
-require 'rspec/expectations'
+#require 'rspec/expectations'
 require 'capybara/cucumber'
 
  #attr_reader :driver
