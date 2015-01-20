@@ -1,2 +1,14 @@
 # script file
-script: initial_script.sh
+
+build_image: shippableimages/ubuntu1404_ruby
+language: ruby
+rvm:
+- 2.1.2
+
+
+before_install:
+ - bundle install
+ 
+ 
+script:
+ - cucumber features/GoogleTest.feature
