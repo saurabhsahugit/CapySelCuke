@@ -1,2 +1,2 @@
 # script file
-script: ./minions/initial_script.sh
+script: ./initial_script.sh
